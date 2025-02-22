@@ -1,4 +1,4 @@
-# LeetCode Algorithm App
+# LeetCode/HackerRank Algorithm Web App
 
 Practice your web dev skills while solving programming algorithm challenges!
 
@@ -7,6 +7,13 @@ Practice your web dev skills while solving programming algorithm challenges!
 ## What is it?
 
 This project is an Angular web application for writing LeetCode-style algorithms. It provides a base web application for implementing LeetCode/HackerRank style algorithms, but at the same time, practicing web dev skills. Instead of using a third-party web site to solve programming problems, you can write them into this application framework and improve your skill in Angular, TypeScript, and VSCode in the process!
+
+## Tech Stack
+
+- Angular
+- TypeScript
+- Material UI
+- VSCode
 
 ## Development server
 
