@@ -1,5 +1,27 @@
+import { first } from "rxjs";
+
 export class AlgorithmModule {
-  static findMajorityNumber = (input: string = '') => {
+  static findMajorityNumber = (input: string) => {
+    let result: string | undefined = undefined;
+
+    let symbols: string[] = input.split(',');
+
+    let count = 0;
+    for (let i = 0; i < symbols.length; i++) {
+      if (count === 0) {
+        result = symbols[i];
+        count++;
+      } else if (result === symbols[i]) {
+        count++;
+      } else {
+        count--;
+      }
+    }
+
+    return result;
+  }
+
+  static findMajorityNumberHash = (input: string = '') => {
     let result: string | undefined = undefined;
 
     const hash: { [id: string] : number } = {};
@@ -17,21 +39,45 @@ export class AlgorithmModule {
     return result;
   }
 
-  static findMajorityNumber1 = (input: string) => {
-    let result: string | undefined = undefined;
+  static fibonacci = (input: string) => {
+    let result: number = 0;
 
-    let symbols: string[] = input.split(',');
+    const count: number = parseInt(input);
+    let firstValue = 0;
+    let secondValue = 1;
 
-    let count = 0;
-    for (let i = 0; i < symbols.length; i++) {
-      if (count === 0) {
-        result = symbols[i];
-        count++;
-      } else if (result === symbols[i]) {
-        count++;
-      } else {
-        count--;
-      }
+    // Base-case: fib[0] = 0, fib[1] = 1.
+    if (count === 0) {
+      result = 0;
+    }
+    else {
+      result = 1;
+    }
+
+    for (let i = 1; i < count; i++) {
+      result = firstValue + secondValue;
+
+      firstValue = secondValue;
+      secondValue = result;
+    }
+
+    return result;
+  }
+
+  static fibonacciRec = (input: string) => {
+    let result: number = 0;
+
+    const count: number = parseInt(input);
+
+    // Base-case: fib[0] = 0, fib[1] = 1.
+    if (count === 0) {
+      result = 0;
+    }
+    else if (count === 1) {
+      result = 1;
+    }
+    else {
+      result = this.fibonacciRec((count - 2).toString()) + this.fibonacciRec((count - 1).toString());
     }
 
     return result;

@@ -17,7 +17,7 @@
             </mat-error>
 
             <button mat-raised-button color="primary" (click)="findResult()">Submit</button>
-            <div *ngIf="result">
+            <div *ngIf="result !== undefined && result !== ''">
                 <div class="output">
                     Result: {{ result }}
                 </div>

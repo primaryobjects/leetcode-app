@@ -14,7 +14,7 @@ import { AlgorithmModule } from '../algorithm/algorithm.module';
 export class MainComponent {
   submitted: boolean = false;
   input: string = '';
-  result?: any;
+  result?: any = undefined;
 
   findResult = () => {
     this.submitted = true;
