@@ -6,7 +6,16 @@ Practice your web dev skills while solving programming algorithm challenges!
 
 ## What is it?
 
-This project is an Angular web application for writing LeetCode-style algorithms. It provides a base web application for implementing LeetCode/HackerRank style algorithms, but at the same time, practicing web dev skills. Instead of using a third-party web site to solve programming problems, you can write them into this application framework and improve your skill in Angular, TypeScript, and VSCode in the process!
+This project is an Angular web application for writing LeetCode-style algorithms. It provides a base web application for implementing LeetCode/HackerRank style algorithms, but at the same time, practicing web dev skills.
+
+Instead of using a third-party web site to solve programming problems, you can write them into this application framework and improve your skill in Angular, TypeScript, and VSCode in the process!
+
+## Quick Start
+
+1. Install dependencies `npm install`
+2. Start the web application `ng serve`
+3. Add your algorithm in [algorithm.module.ts](https://github.com/primaryobjects/leetcode-app/blob/main/src/app/algorithm/algorithm.module.ts)
+4. The algorithm function takes a string as input/output. Input is provided from the UI. Output will be displayed on the page.
 
 ## Tech Stack
 
