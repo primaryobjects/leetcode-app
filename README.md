@@ -16,6 +16,7 @@ Instead of using a third-party web site to solve programming problems, you can w
 2. Start the web application `ng serve`
 3. Add your algorithm in [algorithm.module.ts](https://github.com/primaryobjects/leetcode-app/blob/main/src/app/algorithm/algorithm.module.ts)
 4. The algorithm function takes a string as input/output. Input is provided from the UI. Output will be displayed on the page.
+5. Select which algorithm to run [here](https://github.com/primaryobjects/leetcode-app/blob/main/src/app/main/main.component.ts#L21).
 
 ## Tech Stack
 
