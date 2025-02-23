@@ -82,4 +82,15 @@ export class AlgorithmModule {
 
     return result;
   }
+
+  static fibonacciN = (input: string) => {
+    let result: string = '';
+    const n = parseInt(input);
+
+    for (let i=0; i<n; i++) {
+      result += this.fibonacci(i.toString()) + ',';
+    }
+
+    return result;
+  }
 }
